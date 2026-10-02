@@ -3,38 +3,117 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Vivero raiz - Inicio</title>
+  <title>Inicio — Vivero Raiz</title>
+  <h2>Vivero ubicado en Santa Fe</h2>
 </head>
 <body>
 
   <header>
-    <h1>Vivero Raiz</h1>
-    <nav>
+    <div class="logo-container">
+      <a href="index.html">
+        <h1>VIVERO RAIZ</h1>
+        <small>DESDE 2022</small>
+      </a>
+    </div>
+    <nav aria-label="Navegacion principal">
       <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="catalogo.html">Catálogo</a></li>
+        <li><a href="catalogo.html">Catalogo</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
         <li><a href="contacto.html">Contacto</a></li>
-        <li><a href="login.html">Ingresar</a></li>
+        <li><a href="login.html" class="btn-ingresar">Ingresar</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Variedad de plantas de interior y exterior</h2>
-      <p>Nos dedicamos a la venta de plantas para hogares, patios y oficinas. Te ayudamos a elegir la mejor opción según la luz y el espacio que tengas disponible.</p>
-      <p><a href="catalogo.html">Ver las plantas disponibles</a></p>
+    <section class="hero">
+      <h2>Plantas que aguantan tu ritmo de vida</h2>
+      <p>Mas de 200 especies de interior y exterior, con explicación de cuidados de cada una. Elegi por luz, por riego o por lo que te guste mirar.</p>
+      <div>
+        <a href="catalogo.html">VER CATALOGO</a>
+        <a href="contacto.html">COMO LLEGAR</a>
+      </div>
     </section>
 
-    <section>
-      <h2>Recomendaciones del mes</h2>
-      <p>Llegaron nuevas plantas ideales para media sombra y espacios cerrados.</p>
+    <section class="categorias">
+      <h2>Elegi por donde vas a ponerla</h2>
+      <p>Tres familias que cubren casi cualquier rincon: el living con poca luz, el balcon que se lleva todo el sol y el escritorio.</p>
+      
+      <div class="grilla-categorias">
+        <article>
+          <img src="img/interior.jpg" alt="Planta de interior en maceta">
+          <h3>Interior</h3>
+          <p>Para ambientes con luz indirecta y poco viento.</p>
+          <a href="catalogo.html">VER PLANTAS &rarr;</a>
+        </article>
+
+        <article>
+          <img src="img/exterior.jpg" alt="Planta de exterior resistente al sol">
+          <h3>Exterior</h3>
+          <p>Resisten sol pleno, lluvia y cambios de temperatura.</p>
+          <a href="catalogo.html">VER PLANTAS &rarr;</a>
+        </article>
+
+        <article>
+          <img src="img/suculentas.jpg" alt="Suculenta en maceta de barro">
+          <h3>Suculentas</h3>
+          <p>Riego cada quince dias. Ideales para empezar.</p>
+          <a href="catalogo.html">VER PLANTAS &rarr;</a>
+        </article>
+      </div>
     </section>
 
+    <section class="sobre-nosotros-preview">
+      <img src="img/vivero-cultivo.jpg" alt="Sector de cultivo en el vivero">
+      <div>
+        <h2>Un vivero, no un deposito</h2>
+        <p>Cultivamos en Santa Fe desde 2022. Cada planta que sale de aca paso por nuestras manos y tiene una ficha con lo que necesita para no morirse en dos semanas.</p>
+        <ul>
+          <li>Asesoramiento antes y despues de la compra</li>
+          <li>Envios a toda la provincia de Santa Fe en 48 horas</li>
+          <li>Reposicion si la planta llega danada</li>
+        </ul>
+        <a href="nosotros.html">CONOCE EL VIVERO</a>
+      </div>
+    </section>
+
+    <section class="banner-intranet">
+      <div>
+        <h2>¿Trabajas en el vivero?</h2>
+        <p>Entra con tu cuenta para cargar plantas, actualizar precios y controlar el stock.</p>
+      </div>
+      <a href="login.html">INGRESAR A LA INTRANET</a>
+    </section>
+  </main>
 
   <footer>
-    <p>Vivero Raíces - Santa Fe, Argentina</p>
-    <p>Atención al público de lunes a viernes de 8 a 18 hs</p>
+    <section class="footer-info">
+      <div class="footer-col">
+        <h3>VIVERO RAIZ</h3>
+        <p>esquina Boulevard y Urquiza <br>Santa Fe, Argentina<br>3425148312</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>SECCIONES</h3>
+        <nav aria-label="Navegacion pie de pagina">
+          <ul>
+            <li><a href="catalogo.html">Catalogo</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="login.html">Ingresar</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-col">
+        <h3>HORARIOS</h3>
+        <p>Lunes a viernes de 9 a 12 / 15 a 20<br>Sabados de 9 a 13<br>Domingos cerrado</p>
+      </div>
+    </section>
+
+    <div class="footer-bottom">
+      <p>&copy; VIVERO RAIZ — TRABAJO PRACTICO INTEGRADOR - Nicolás Sánchez</p>
+    </div>
   </footer>
 
 </body>
